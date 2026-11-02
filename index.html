@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="个人学术主页，研究方向：遥感科学与技术、冰冻圈遥感、积雪遥感、气候变化。">
+<title>个人学术主页</title>
+<style>
+:root{--navy:#17365d;--blue:#285b8f;--ink:#263445;--muted:#687789;--line:#e5ebf1;--bg:#f5f8fb;--white:#fff;--accent:#d9e8f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.75}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+header{background:linear-gradient(120deg,#153557,#285b8f);color:#fff;padding:18px 0 58px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:15px;letter-spacing:.08em;font-weight:600}.nav{display:flex;gap:20px;flex-wrap:wrap}.nav a{color:#eaf2f9;font-size:14px}
+.hero{display:grid;grid-template-columns:1.5fr .7fr;gap:48px;align-items:center;padding-top:56px}
+.eyebrow{color:#c7dced;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.2;margin:12px 0}.role{font-size:18px;color:#e2edf7;margin-bottom:18px}
+.intro{max-width:660px;color:#e5eef6;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tag{border:1px solid #7d9dbb;border-radius:30px;padding:5px 13px;font-size:13px;color:#f1f6fa}
+.profile-placeholder{width:210px;height:250px;border:1px solid #9ab1c8;border-radius:8px;overflow:hidden;margin:auto;padding:0}
+.profile-placeholder img{width:100%;height:100%;object-fit:cover;display:block}
+main{padding:38px 0 70px}.layout{display:grid;grid-template-columns:245px 1fr;gap:28px;align-items:start}
+aside{position:sticky;top:20px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+.aside-title{font-size:13px;color:var(--muted);letter-spacing:.12em;margin-bottom:12px}.side-links{display:grid;gap:7px}.side-links a{padding:7px 10px;border-radius:6px;color:#43566a;font-size:14px}.side-links a:hover{background:#edf4fa;text-decoration:none}
+.contact-mini{border-top:1px solid var(--line);margin-top:18px;padding-top:15px;font-size:13px;color:var(--muted)}
+section{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 32px;margin-bottom:20px;scroll-margin-top:18px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.section-no{font-size:12px;color:var(--blue);background:#eaf2f9;border-radius:5px;padding:4px 8px;letter-spacing:.08em}
+h2{font-size:21px;color:var(--navy);margin:0}h3{font-size:16px;color:#304b67;margin:0 0 7px}
+p{margin:8px 0}.muted{color:var(--muted)}.placeholder-note{background:#f4f8fb;border-left:3px solid #9bb8d2;padding:12px 15px;color:#62758a;font-size:14px;margin-top:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.info-card{background:#f7f9fc;border:1px solid #e8eef4;border-radius:8px;padding:16px;text-align: center;}
+.info-card p{font-size:14px;color:var(--muted);margin:5px 0 0}
+.timeline{display:grid;gap:16px}.timeline-item{display:grid;grid-template-columns:110px 1fr;gap:16px;padding-bottom:15px;border-bottom:1px solid #edf1f5}.timeline-item:last-child{border:0;padding-bottom:0}.year{font-size:14px;color:var(--blue);font-weight:600}
+.list{padding-left:20px;margin:8px 0}.list li{padding:4px 0}.pub{padding:12px 0;border-bottom:1px solid #edf1f5}.pub:last-child{border:0}.pub-meta{font-size:13px;color:var(--muted)}
+.award {padding: 5px 0;margin-bottom: 5px;border-bottom: 1px solid #edf1f5;line-height: 1.5;}.award:last-child {border-bottom: none;}.pub a {color: #1677c8;text-decoration: none;}.pub a:hover {color: #0b4f8a;text-decoration: underline;}
+.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{padding:17px;background:#f5f8fb;border-radius:8px;text-align:center}.metric strong{display:block;font-size:25px;color:var(--blue)}.metric span{font-size:13px;color:var(--muted)}
+footer{background:#173557;color:#d7e3ee;padding:25px 0;font-size:13px;text-align:center}
+.edit-hint{font-size:12px;color:#8292a2;margin-top:12px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:25px;padding-top:38px}.profile-placeholder{width:150px;height:170px;grid-row:1}.profile-placeholder .silhouette{font-size:48px}.layout{grid-template-columns:1fr}aside{position:static}.side-links{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}.metric-row{grid-template-columns:1fr 1fr}section{padding:23px 20px}.nav{gap:10px}.top{align-items:flex-start;flex-direction:column}}
+@media(max-width:480px){.wrap{padding:0 16px}.timeline-item{grid-template-columns:1fr;gap:2px}.metric-row{grid-template-columns:1fr}.nav a{font-size:13px}}
+</style>
+</head>
+<body>
+<header id="home">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">ACADEMIC HOMEPAGE</div>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">个人简介</a><a href="#education and work">教育与工作经历</a><a href="#research">研究方向</a><a href="#projects">科研项目</a><a href="#publications">科研成果</a><a href="#teaching">教学工作</a><a href="#team">团队与学生</a><a href="#contact">联系方式</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">FACULTY · RESEARCH · EDUCATION</div>
+        <h1>邓刚</h1>
+        <div class="role">专任教师</div>
+        <p class="intro">主要从事遥感科学与技术、冰冻圈遥感及气候变化相关研究，关注高寒山区积雪与冰川变化、遥感监测方法等。</p>
+        <div class="tags"><span class="tag">遥感科学与技术</span><span class="tag">冰冻圈遥感</span><span class="tag">积雪遥感监测与模拟</span><span class="tag">气候变化/极端天气气候事件</span></div>
+      </div>
+      <div class="profile-placeholder"><img src="profile.jpg" alt="教师个人照片"style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+
+    </div>
+  </div>
+</header>
+<main class="wrap">
+ <div class="layout">
+  <aside>
+    <div class="aside-title">CONTENTS / 目录</div>
+    <nav class="side-links">
+      <a href="#about">个人简介</a><a href="#education and work">教育与工作经历</a><a href="#research">研究方向</a><a href="#projects">科研项目</a><a href="#publications">科研成果</a><a href="#teaching">教学工作</a><a href="#team">团队与学生</a><a href="#contact">联系方式</a>
+    </nav>
+    <div class="contact-mini"><strong>联系我</strong><br>邮箱：denggang@hnust.edu.cn<br>单位：湖南科技大学 地球科学与空间信息工程学院</div>
+  </aside>
+  <div>
+   <section id="about">
+    <div class="section-head"><span class="section-no">01</span><h2>个人简介</h2></div>
+    <p> &nbsp&nbsp&nbsp&nbsp 邓刚，男，1995 年生，河南潢川人，博士。现任<strong>湖南科技大学 地球科学与空间信息工程学院</strong>专任教师，研究兴趣包括：冰冻圈变化、积雪遥感监测与模拟、极端天气气候、遥感与GIS应用等。
+        主持和参与冰冻圈科学国家重点实验室开放基金项目和湖南省教育厅科研项目等项目 2 项。已发表科研论文近 30 篇，其中以第一作者/共同第一作者或通讯作者 8 篇。</p>
+    <p> &nbsp&nbsp&nbsp&nbsp 担任ISPRS P&RS、RSE、Scientific Data、IJDE、Remote Sensing等国际SCI期刊审稿人。</p>
+    <p><strong>学术主页：</strong></p>
+    <p>ResearchGate主页：<a href="https://www.researchgate.net/profile/Gang-Deng-11" target="_blank" rel="noopener noreferrer">https://www.researchgate.net/profile/Gang-Deng-11</a></p>
+    <p>ORCID主页：<a href="https://orcid.org/0000-0001-5498-0196" target="_blank" rel="noopener noreferrer">https://orcid.org/0000-0001-5498-0196</a></p>
+    <p>中国知网主页：<a href="https://au.cnki.net/author/personalInfo/000042942740" target="_blank" rel="noopener noreferrer">https://au.cnki.net/author/personalInfo/000042942740</a></p>
+    </section>
+   <section id="education and work">
+    <div class="section-head"><span class="section-no">02</span><h2>教育与工作经历：</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="year">2026.07—至今</div><div><h3>湖南科技大学 &nbsp 地球科学与空间信息工程学院 地理与信息科学系 &nbsp&nbsp&nbsp&nbsp&nbsp 专任教师</h3></div></div>
+      <div class="timeline-item"><div class="year">2022.09—2026.06</div><div><h3>中国地质大学（武汉） &nbsp 地理与信息工程学院 &nbsp&nbsp&nbsp&nbsp&nbsp 博士</h3></div></div>
+      <div class="timeline-item"><div class="year">2021.06—2022.08</div><div><h3>湖南科技大学 &nbsp 地理空间信息技术国家地方联合工程实验室 &nbsp&nbsp&nbsp&nbsp&nbsp 科研助理</h3></div></div>
+      <div class="timeline-item"><div class="year">2018.09—2021.06</div><div><h3>湖南科技大学 &nbsp 资源环境与安全工程学院 &nbsp&nbsp&nbsp&nbsp&nbsp 硕士</h3></div></div>
+    </div>
+   </section>
+   <section id="research">
+    <div class="section-head"><span class="section-no">03</span><h2>研究方向</h2></div>
+    <div class="grid3">
+      <div class="info-card"><h3>冰冻圈遥感</h3></div>
+      <div class="info-card"><h3>地理观测与模拟</h3></div>
+      <div class="info-card"><h3>气候变化/极端天气气候</h3></div>
+    </div>
+   </section>
+   <section id="projects">
+    <div class="section-head"><span class="section-no">04</span><h2>科研项目</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="year">2021.01—2022.12</div><div><h3>基于GEE云计算平台的亚洲高山区高分辨率融雪末期雪线高度变化研究</h3><p class="muted">冰冻圈科学国家重点实验室开放基金项目，参与，已结题。</p></div></div>
+      <div class="timeline-item"><div class="year">2020.10—2023.09</div><div><h3>基于Google Earth Engine云平台的湖南省近35年不透水面遥感监测</h3><p class="muted">湖南省教育厅科研项目（优秀青年项目），参与，已结题。</p></div></div>
+    </div>
+   </section>
+   <section id="publications">
+    <div class="section-head"><span class="section-no">05</span><h2>科研成果</h2></div>
+    <h3>学术论文成果（按时间倒序排列）</h3>
+    <h3>~~以第一作者/共同第一作者#或通讯作者*~~</h3>
+    <div class="pub">1. <strong>Deng, G.</strong>, Liu, X.*, Chen, Q., Tang, Z., ... & He, Y. (2026). A generalized enhanced snow/ice index based on Landsat imagery for accurate snow/ice mapping in mountainous areas. Journal of Hydrology, 673, 135434. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.jhydrol.2026.135434"target="_blank"rel="noopener noreferrer">10.1016/j.jhydrol.2026.135434</a> </div>
+    <div class="pub">2. <strong>Deng, G.</strong>, Zhang, T., Liu, X.*, ... & Tang, Z. (2025). Intensifying heatwave events affect snow phenology over the Tibetan Plateau. Journal of Hydrology, 659, 133293. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.jhydrol.2025.133293"target="_blank"rel="noopener noreferrer">10.1016/j.jhydrol.2025.133293</a> </div>
+    <div class="pub">3. Zhang, T.#, <strong>Deng, G.#</strong>, Liu, X.*, ... & Chen, Q. (2025). Comprehensive heatwave magnitude index considering the effect of indicator equilibrium. Atmospheric Research, 330, 108591. (JCR Q1, 中科院二区，共同第一作者) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.atmosres.2025.108591"target="_blank"rel="noopener noreferrer">10.1016/j.atmosres.2025.108591</a> </div>
+    <div class="pub">4. <strong>Deng, G.</strong>, Tang, Z.*, Dong, C., Shao, D., & Wang, X. (2024). Development and evaluation of a cloud-gap-filled MODIS normalized difference snow index product over High Mountain Asia. Remote Sensing, 16(1), 192. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/rs16010192"target="_blank"rel="noopener noreferrer">10.3390/rs16010192</a> </div>
+    <div class="pub">5. <strong>Deng, G.</strong>, Liu, X.*, Shen, Q., Zhang, T., Chen, Q., & Tang, Z. (2024). Remote sensing data assimilation to improve the seasonal snow cover simulations over the Heihe River Basin, Northwest China. International Journal of Climatology, 44(15), 5621-5640. (JCR Q2, 中科院三区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1002/joc.8656"target="_blank"rel="noopener noreferrer">10.1002/joc.8656</a> </div>
+    <div class="pub">6. Tang, Z.*, <strong>Deng, G.*</strong>, Hu, G., Zhang, H., Pan, H., & Sang, G. (2022). Satellite observed spatiotemporal variability of snow cover and snow phenology over high mountain Asia from 2002 to 2021. Journal of Hydrology, 613, 128438. (JCR Q1, 中科院一区TOP，共同通讯作者) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.jhydrol.2022.128438"target="_blank"rel="noopener noreferrer">10.1016/j.jhydrol.2022.128438</a> </div>
+    <div class="pub">7. <strong>Deng, G.</strong>, Tang, Z.*, Hu, G., Wang, J., Sang, G., & Li, J. (2021). Spatiotemporal dynamics of snowline altitude and their responses to climate change in the Tienshan Mountains, Central Asia, During 2001–2019. Sustainability, 13(7), 3992. (JCR Q2, SSCI Q2, 中科院三区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/su13073992"target="_blank"rel="noopener noreferrer">10.3390/su13073992</a> </div>
+    <div class="pub">8. <strong>邓刚</strong>, 唐志光, 李朝奎, 陈浩, 彭焕华, & 王晓茹. (2020). 基于MODIS时序数据的湖南省水稻种植面积提取及时空变化分析. 国土资源遥感, 32(02), 177-185. (中文CSCD核心)</strong></div>
+
+    <h3>~~以合作作者身份发表论文~~</h3>
+    <div class="pub">1. Zhang, T., <strong>Deng, G.</strong>, Liu, X.*, Zhang, X., Luo, Z., & Chen, Q. (2027). Vertical patterns of soil heatwave duration and their association with thermal memory over the Tibetan Plateau. Catena, 276, 110697. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.catena.2026.110697"target="_blank"rel="noopener noreferrer">10.1016/j.catena.2026.110697</a> </div>
+    <div class="pub">2. Wang, X., Tang, Z.*, Zhao, Y., Yang, C., Hu, G., <strong>Deng, G.</strong>, & Chen, H. (2026). Spatiotemporal variations in snowline altitude across the High Mountain Asia from 1990 to 2024 Based on Landsat Data. Advances in Climate Change Research, In Press. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.accre.2026.09.007"target="_blank"rel="noopener noreferrer">10.1016/j.accre.2026.09.007</a> </div>
+    <div class="pub">3. Luo, Z., <strong>Deng, G.</strong>, Zhang, T., Zhang, X., Liu, X.*, & Chen, Q. (2026). Decoupling the internal asymmetry of compound drought-heat events reveals divergent spring phenology responses in the Yangtze River Basin. Agricultural and Forest Meteorology, 389, 111394. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.agrformet.2026.111394"target="_blank"rel="noopener noreferrer">10.1016/j.agrformet.2026.111394</a> </div>
+    <div class="pub">4. Zhang, T., <strong>Deng, G.</strong>, Liu, X.*, He, Y., Shen, Q., & Chen, Q. (2025). Heatwave magnitude quantization and impact factors analysis over the Tibetan Plateau. npj Climate and Atmospheric Science, 8(1), 2. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1038/s41612-024-00877-x"target="_blank"rel="noopener noreferrer">10.1038/s41612-024-00877-x</a> </div>
+    <div class="pub">5. Chen, Z., Chen, Q., Pan, X.*, Liu, X.*, <strong>Deng, G.</strong>, & Zhang, T. (2025). Estimating of antibiotic resistance genes in the sediments of Erhai Lake, China: Based on multi-source remote sensing data. Journal of Hydrology, 660, 133350. (JCR Q1, 中科院一区TOP) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.jhydrol.2025.133350"target="_blank"rel="noopener noreferrer">10.1016/j.jhydrol.2025.133350</a> </div>
+    <div class="pub">6. Chi, C., Liu, X.*, Hua, W., <strong>Deng, G.</strong>, & Zhang, T. (2025). AQUDF: Adaptive Frequency Annealing with Quadratic-Enhanced Implicit Surface Reconstruction. Neurocomputing, 665, 132273. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.neucom.2025.132273"target="_blank"rel="noopener noreferrer">10.1016/j.neucom.2025.132273</a> </div>
+    <div class="pub">7. Tang, Z.*, Wang, X., Jiang, Q., Pan, H., <strong>Deng, G.</strong>, Chen, H., ... & Hou, H. (2025). Parcel-scale crop planting structure extraction combining time-series of Sentinel-1 and Sentinel-2 data based on a semantic edge-aware multi-task neural network. International Journal of Digital Earth, 18(1), 2497487. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1080/17538947.2025.2497487"target="_blank"rel="noopener noreferrer">10.1080/17538947.2025.2497487</a> </div>
+    <div class="pub">8. Jiang, X., Chen, H., Tang, Z. *, Guo, H., <strong>Deng, G.</strong>, You, Y., & Hou, H. (2025). Temperature Governs the Elevation Dependency of Snow Cover Changes in the Upper Reaches of the Yarkand River Basin. Remote Sensing, 18(1), 80. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/rs18010080"target="_blank"rel="noopener noreferrer">10.3390/rs18010080</a> </div>
+    <div class="pub">9. Hu, X., Chen, Q., Liu, X., <strong>Deng, G.</strong>, Chi, C., & Wang, B.* (2025). ANF-Net: A Refined Segmentation Network for Road Scenes with Multiple Noises and Various Morphologies of Cracks. Remote Sensing, 17(6), 971. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/rs17060971"target="_blank"rel="noopener noreferrer">10.3390/rs17060971</a> </div>
+    <div class="pub">10. Jiang, Q., Tang, Z.*, Zhou, L., Hu, G., <strong>Deng, G.</strong>, Xu, M., & Sang, G. (2023). Mapping paddy rice planting area in Dongting lake area combining time series Sentinel-1 and Sentinel-2 images. Remote sensing, 15(11), 2794. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/rs15112794"target="_blank"rel="noopener noreferrer">10.3390/rs15112794</a> </div>
+    <div class="pub">11. Wang, J., Tang, Z.*, <strong>Deng, G.</strong>, Hu, G., You, Y., & Zhao, Y. (2023). Landsat satellites observed dynamics of snowline altitude at the end of the melting season, Himalayas, 1991–2022. Remote Sensing, 15(10), 2534. (JCR Q1, 中科院二区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.3390/rs15102534"target="_blank"rel="noopener noreferrer">10.3390/rs15102534</a> </div>
+    <div class="pub">12. Tang, Z., Wang, X., <strong>Deng, G.</strong>, Wang, X., Jiang, Z., & Sang, G. (2020). Spatiotemporal variation of snowline altitude at the end of melting season across High Mountain Asia, using MODIS snow cover product. Advances in Space Research, 66(11), 2629-2645. (JCR Q2, 中科院三区) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1016/j.asr.2020.09.035"target="_blank"rel="noopener noreferrer">10.1016/j.asr.2020.09.035</a> </div>
+    <div class="pub">13. Zhang, T., Liu, X.*, <strong>Deng, G.</strong>, & Shen, Q. (2024, July). Quantifying the heatwave magnitude over the Tibetan Plateau from 1979 to 2022 with the comprehensive heatwave index. In Fifth International Conference on Geology, Mapping, and Remote Sensing (ICGMRS 2024) (Vol. 13223, pp. 345-350). SPIE. (会议论文) &nbsp<strong>论文链接: </strong><a href="https://doi.org/10.1117/12.3035555"target="_blank"rel="noopener noreferrer">10.1117/12.3035555</a> </div>
+    <div class="pub">14. 李佳, 唐志光, <strong>邓刚</strong>, 等. (2023). 2001-2020年青藏高原草地物候变化遥感监测.水土保持研究, 30(04), 265-274. (中文CSCD核心)</div>
+    <div class="pub">15. 刘雅楠, 李好胜, <strong>邓刚</strong>, & 胡娜. (2023). 综合影像白平衡的稀疏光流跟踪河流测速方法. 测绘与空间地理信息, 46(8), 81-84. </div>
+    <div class="pub">16. 王靖文, 唐志光, <strong>邓刚</strong>, 胡国杰, & 桑国庆. (2022). 1991—2021年天山融雪末期雪线高度遥感监测研究. 干旱区研究, 39(5), 1385-1397. (中文CSCD核心)</div>
+    <div class="pub">17. 桑国庆, 唐志光, 毛克彪, <strong>邓刚</strong>, 王靖文, & 李佳. (2022). 基于GEE 云平台与Sentinel数据的高分辨率水稻种植范围提取——以湖南省为例. 作物学报, 48(9), 2409-2420. (中文CSCD核心)</div>
+    <div class="pub">18. 唐志光, <strong>邓刚</strong>, 胡国杰, 王欣, 蒋宗立, & 桑国庆. (2021). 亚洲高山区积雪物候时空动态及其对气候变化的响应. 冰川冻土, 43(5), 1400-1411. (中文CSCD核心)</strong></div>
+    <div class="pub">19. 桑国庆, 唐志光, <strong>邓刚</strong>, 管庆丹, 陈浩, 李朝奎, & 王晓茹. (2021). 基于 MODIS NDVI 时序数据的湖南省植被变化研究. 长江流域资源与环境, 30(5), 1100-1109. (中文CSCD/CSSCI核心)</div>
+    <div class="pub">20. 唐志光, <strong>邓刚</strong>, 李少为, 李朝奎, 陈浩, & 彭焕华. (2020). 基于 Google Earth Engine 的湖南省近30年不透水面时空变化研究. 地理与地理信息科学, 36(2), 41-46. (中文CSCD核心)</strong></div>
+    <div class="pub">21. 王晓茹, 唐志光, 王建, <strong>邓刚</strong>, 王欣, & 魏俊锋. (2019). 亚洲高山区融雪末期雪线高度空间差异的影响因素分析. 冰川冻土, 41(5), 1173-1182. (中文CSCD核心)</div>
+       
+    <h3 style="margin-top:20px">其他成果</h3>
+    <ul class="list">
+        <li><strong>学术专著 / 教材 / 数据集：</strong>
+            <div class="award">已发布 3 套科学数据集</div></li>
+        <li><strong>发明专利 / 软件著作权：</strong>
+            <div class="award">授权发明专利 1 项、授权实用新型专利 2 项</div></li>
+        <li><strong>奖励及荣誉：</strong>
+            <div class="award">获 2021 年度湖南省自然科学三等奖 “亚洲高山区积雪遥感信息重建方法及时空变化监测研究” (排名5/5)</div>
+            <div class="award">获第四届优秀共享开放遥感数据集“优秀数据集”（2025.12）</div>
+            <div class="award">获中国地质大学（武汉）2026 届优秀毕业生</div>
+            <div class="award">获中国地质大学（武汉）2024-2025 年度校级优秀研究生</div>
+            <div class="award">获中国地质大学（武汉）2025-2026 年度校研84级奖学金</div>
+            <div class="award">获“第十届全国积雪遥感学术研讨会”最佳口头报告奖 (2026.05)</div>
+            <div class="award">获“第六届地质、测绘与遥感国际学术会议”最佳口头报告奖 (2025.04)</div>
+            <div class="award">获湘潭市普通高等学校 2021 届优秀毕业研究生</div>
+            <div class="award">获湖南科技大学 2021 届优秀毕业研究生</div>
+            <div class="award">获 2019-2020 学年湖南科技大学优秀研究生</div>
+        </li>
+    </ul>
+       
+   </section>
+   <section id="teaching">
+    <div class="section-head"><span class="section-no">06</span><h2>教学工作</h2></div>
+    <div class="grid3">
+      <div class="info-card"><h3>主讲课程</h3><p>地理信息科学进展与前沿、地理信息科学专业英语</p></div>
+    </div>
+   </section>
+   <section id="team">
+    <div class="section-head"><span class="section-no">07</span><h2>团队与学生培养</h2></div>
+    <p>欢迎对<strong>冰冻圈变化</strong>、<strong>积雪遥感监测与过程模拟</strong>、<strong>全球变化与极端天气气候事件</strong>以及<strong>遥感与GIS应用</strong>等方向感兴趣的同学联系交流。</p>
+    <h3 style="margin-top:18px">研究生招生方向（暂无）</h3>
+
+    <!--
+    <ul class="list"><li>方向1</li><li>方向2</li><li>方向3</li></ul>
+    -->
+
+   </section>
+   <section id="contact">
+    <div class="section-head"><span class="section-no">07</span><h2>联系方式</h2></div>
+    <div class="grid3">
+      <div class="info-card"><h3>电子邮箱</h3><p>denggang@hnust.edu.cn</p></div>
+      <div class="info-card"><h3>工作单位</h3><p>湖南科技大学 地球科学与空间信息工程学院</p></div>
+      <div class="info-card"><h3>办公地址</h3><p>湖南科技大学 地球科学与空间信息工程学院 院楼315室</p></div>
+    </div>
+   </section>
+  </div>
+ </div>
+</main>
+<footer><div class="wrap">© 邓刚 · 个人学术主页　|　更新日期：2026.11.15</div></footer>
+</body>
+</html>
